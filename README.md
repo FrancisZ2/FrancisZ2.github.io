@@ -10,7 +10,7 @@ This is the data for my personal website, Resume, and elevator speech.
 
 ## Elevator speech
 
-**Assume meet Jeff Bezos from Amazon
+* Assume meet Jeff Bezos from Amazon
 
 I’m a senior college student study supply chain management and computer information system at W.P Carey School of Business at Arizona State University.
 
