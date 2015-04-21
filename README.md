@@ -1,6 +1,8 @@
 # FrancisZ2.github.io
-This is the data for my personal website
-This is the combination of two older blog dumps that I have from 2000 - 2009. all of my atmos.org posts combined.
+## Intro
+This is the data for my personal website, Resume, and elevator speech.
+
+[Intro.pdf](https://github.com/FrancisZ2/FrancisZ2.github.io/blob/master/Chao_Zhu_2015_Resume.pdf).
 
 It is automatically transformed by Jekyll into a static site whenever I push this repository to GitHub.
 
