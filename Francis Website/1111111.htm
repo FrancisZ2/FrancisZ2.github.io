@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game</title>
+<style>
+#puzzle_container{
+	text-align:center;
+	vertical-align:center;
+	border:5px outset #CCCCCC;
+	position:relative;
+	color: #FFFFFF;
+	background-color: #707070;
+	width: 520px;	/* IE 5.x */
+	width/* */:/**/500px;
+	width: /**/500px;	
+	
+	height: 520px;
+	height/* */:/**/500px;
+	height: /**/500px;			
+}
+#puzzle_container .square{
+	overflow:hidden;
+	border-left:1px solid #FFF;
+	border-top:1px solid #FFF;
+	position:absolute;
+}
+.activeImageIndicator{
+	border:1px solid #FF0000;
+	position:absolute;
+	z-index:10000;
+}
+.revealedImage{
+	position:absolute;
+	left:0px;
+	opacity:0;
+	filter:alpha(opacity=50);
+	top:0px;
+	z-index:50000;
+}
+</style>
+<script src="js/puzzleGame.js"></script>
+</head>
+<body>
+
+	<a href="#" onclick="scramble();return false">Start</a> 
+	<a href="#" onclick="initPuzzle();return false">Switch</a>
+	
+	<form style="display:inline">
+		Columns/Rows: <input type="text" value="4" onblur="var no = this.value.replace(/[^\d]/g,'');if(no/1<3){ this.value = '3';no=3; };cols=no" maxlength="1" size="2"> × 
+					  <input type="text" value="3" onblur="var no = this.value.replace(/[^\d]/g,'');if(no/1<2){ this.value = '2';no=2; };rows=no" maxlength="1" size="2">
+	</form>
+	
+	<div id="puzzle_container">
+		Please wait - initializing script
+	</div>
+    
+	<div id="messageDiv"></div>
+
+</body>
+</html>
